@@ -1,8 +1,6 @@
 import axios from "axios";
 
-// Use backend URL from .env (Render) or localhost fallback
-const BASE_URL =
-  import.meta.env.VITE_BACKEND_URL || "http://localhost:5001/api";
+const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5001/api" : "/api";
 
 export const axiosInstance = axios.create({
   baseURL: BASE_URL,

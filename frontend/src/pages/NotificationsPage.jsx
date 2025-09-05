@@ -40,7 +40,7 @@ const NotificationsPage = () => {
                   Friend Requests
                   <span className="badge badge-primary ml-2">{incomingRequests.length}</span>
                 </h2>
-
+              
                 <div className="space-y-3">
                   {incomingRequests.map((request) => (
                     <div
@@ -88,7 +88,7 @@ const NotificationsPage = () => {
                   <BellIcon className="h-5 w-5 text-success" />
                   New Connections
                 </h2>
-
+              
                 <div className="space-y-3">
                   {acceptedRequests.map((notification) => (
                     <div key={notification._id} className="card bg-base-200 shadow-sm">
